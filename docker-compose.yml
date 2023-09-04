@@ -1,0 +1,21 @@
+version: "3.8"
+
+networks:
+  nato-alphabet:
+      name: nato-alphabet
+
+services:
+  nato-alphabet:
+    hostname: nato-alphabet
+    container_name: nato-alphabet
+    tty: true
+    restart: always
+    volumes:
+      - ./src:/var/www/src
+    build:
+      context: ./
+      dockerfile: src/main/docker/spring/Dockerfile
+    networks:
+      - nato-alphabet
+    ports:
+      - "8000:8000"
