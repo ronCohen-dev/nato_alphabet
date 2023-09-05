@@ -10,6 +10,7 @@ import org.springframework.stereotype.Component;
 @Component
 @RequiredArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE,makeFinal = true)
+
 public class natoWordRunner implements CommandLineRunner {
 
      NatoAlphabetImpl natoAlphabet;
