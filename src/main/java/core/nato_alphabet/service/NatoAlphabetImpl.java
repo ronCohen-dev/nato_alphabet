@@ -8,7 +8,7 @@ import java.util.Map;
 @Service
 public class NatoAlphabetImpl {
 
-    public static String nato(String word) {
+    public String nato(String word) {
         Map<Character, String> natoAlphabet = new HashMap<>();
         natoAlphabet.put('a', "Alpha");
         natoAlphabet.put('b', "Bravo");
